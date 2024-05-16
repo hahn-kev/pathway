@@ -45,7 +45,7 @@ Issue Tracking
 
 Development
 -----------
-Pathway is currently running under .net 4.8
+Pathway is currently running under .net 4.8.1
 
 *Before building Pathway*
 
