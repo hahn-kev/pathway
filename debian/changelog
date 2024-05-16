@@ -1,3 +1,16 @@
+pathway (1.18.3.6006)  experimental; urgency=high
+
+  * Update to .net 4.8.1 - fix os incompatibility with .net 4.8
+
+ -- Greg Trihus <greg_trihus@sil.org>  Thu, 16 May 2024 09:48:00 -0600
+
+pathway (1.18.1.6004)  experimental; urgency=high
+
+  * handle new CSS format from Fieldworks.
+  * update copyright statement
+
+ -- Greg Trihus <greg_trihus@sil.org>  Thu, 22 Feb 2024 15:12:00 -0600
+
 pathway (1.18.0.5984)  experimental; urgency=high
 
   * Build using nuget dependencies
