@@ -1,4 +1,4 @@
-﻿// ---------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------
 #region // Copyright (c) 2016, SIL International. All Rights Reserved.
 // <copyright from='2016' to='2016' company='SIL International'>
 //		Copyright (c) 2016, SIL International. All Rights Reserved.
@@ -84,7 +84,7 @@ namespace DownloadInfoTemplate
 			if (fileName.Contains(".deb") && !substitutions.ContainsKey("_PLATFORM_")) substitutions["_PLATFORM_"] = "linux";
 			if (fileName.Contains("amd64") && !substitutions.ContainsKey("_ARCHITECTURE_")) substitutions["_ARCHITECTURE_"] = "x84_64";
 			if (fileName.Contains("i386") && !substitutions.ContainsKey("_ARCHITECTURE_")) substitutions["_ARCHITECTURE_"] = "x84_32";
-			if (!substitutions.ContainsKey("_STABILITY_")) substitutions["_STABILITY_"] = fileName.ToLower().Contains("test") ? "testing" : "stable";
+			if (!substitutions.ContainsKey("_STABILITY_")) substitutions["_STABILITY_"] = fileName.ToLower().Contains("test") || fileName.ToLower().Contains("beta") ? "testing" : "stable";
 			if (!substitutions.ContainsKey("_NATURE_")) substitutions["_NATURE_"] = GetNature(fileName);
 			// ReSharper disable once AssignNullToNotNullAttribute
 			if (!substitutions.ContainsKey("_MD5_")) substitutions["_MD5_"] = GetMd5(Path.Combine(Path.GetDirectoryName(files[1]), fileName));
