@@ -1,3 +1,9 @@
+pathway (1.18.4.6010)  experimental; urgency=high
+
+  * Revert to .net 4.6.2 to allow it to work on machines with .net 4.8.1 installed
+
+ -- Greg Trihus <greg_trihus@sil.org>  Thu, 17 May 2024 12:36:00 -0600
+
 pathway (1.18.3.6006)  experimental; urgency=high
 
   * Update to .net 4.8.1 - fix os incompatibility with .net 4.8
