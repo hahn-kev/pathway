@@ -1502,7 +1502,8 @@ namespace SIL.PublishingSolution
 		{
 			if (ErrorReport.EmailAddress == null)
 			{
-				ExceptionHandler.Init();
+				//todo determine the best way to handle this
+				ExceptionHandler.Init(new ConsoleExceptionHandler());
 				ErrorReport.EmailAddress = IssuesEmailAddress;
 				ErrorReport.AddStandardProperties();
 				ExceptionHandler.AddDelegate(ReportError);

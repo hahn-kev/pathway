@@ -47,10 +47,6 @@ Development
 -----------
 Pathway is currently running under .net 4.8.1
 
-*Before building Pathway*
-
-Before building Pathway, the developer should install the latest dependencies. All dependencies have been moved to nuGet packages except for the libpalaso packages: `icu.net.dll`, `Spart.dll`, `SIL.Core.dll`, `SIL.Core.Desktop.dll` and `SIL.WritingSystems.dll`. These were installed in the `lib` folder from `libpalaso_palaso-win32-master_Continuous_8.0.0_artifacts` in the net461 folder. The latest icu files: `icudt56.dll`, `icuin56.dll`, and `icuuc56.dll` were also added to that folder.
-
 *Building on Windows*
 
 Wix 3.11.x should be installed to build installer packages. A Developer will also need the Visual Studio Wix extension for the version of Visual Studio being used.
