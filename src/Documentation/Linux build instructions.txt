@@ -17,7 +17,6 @@ If you are on xenial, you want to update the build control with:
 cp Build/xenial-pkg/* debian/.
 (Please don't check in debian/control and debian/rules for xenial as the originals are used for release.sh)
 Make sure the dependencies are installed with:
-bash Build/getDependencies.sh
 Let the system know your info for commits
 git config --global user.name yourname
 git config --global user.email youremailaddress@yourdomain.xyz

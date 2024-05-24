@@ -38,9 +38,6 @@ git -C "./$(git rev-parse --show-cdup)" archive ${BRANCH} | tar -x -C $PKGDIR
 
 cd $PKGDIR
 
-# Download dependencies
-Build/getDependencies.sh
-
 # Delete unwanted non-source files
 find . -type f -iname "*.exe" -delete
 
